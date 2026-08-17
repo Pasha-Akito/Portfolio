@@ -9,6 +9,7 @@ in `SPEC.md`; this file records what changed rather than what is planned.
 
 - Initial repository guidance for contributors and coding agents.
 - Project overview and documentation map.
+- A structured questionnaire for approving public portfolio content.
 
 ### Changed
 
