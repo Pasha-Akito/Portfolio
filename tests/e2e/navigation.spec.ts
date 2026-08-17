@@ -41,6 +41,13 @@ test("navigation reaches every route", async ({ page }) => {
   }
 });
 
+test("loads Vercel Web Analytics", async ({ page }) => {
+  await page.goto("/");
+  await expect(
+    page.locator('script[src="/_vercel/insights/script.js"]'),
+  ).toHaveAttribute("data-sdkn", "@vercel/analytics/next");
+});
+
 test("project and contact links point to approved destinations", async ({
   page,
 }) => {
