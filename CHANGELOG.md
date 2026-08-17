@@ -10,6 +10,12 @@ in `SPEC.md`; this file records what changed rather than what is planned.
 - Initial repository guidance for contributors and coding agents.
 - Project overview and documentation map.
 - A structured questionnaire for approving public portfolio content.
+- The initial responsive Next.js portfolio across Welcome, Projects, Career,
+  About Me, and Contact routes.
+- Shared navigation, project cards, a dark navy visual system, and approved
+  public content and contact links.
+- Formatting, linting, type, component, production-build, Playwright navigation,
+  outbound-link, responsive-layout, and screenshot validation.
 
 ### Changed
 

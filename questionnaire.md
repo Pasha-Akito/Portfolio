@@ -94,8 +94,8 @@ Pasha built essentially all of each shortlisted public project himself.
   backend uses Express, Apollo/GraphQL, and Neo4j; authentication uses Auth0.
 - **Bongard Problem Image Generator:** A Python text-to-image transformer for
   generating Bongard Problem pairs, created for Pasha's master's thesis,
-  *Thinking in Images: Analysing Concept Learning in Neural Networks by
-  Generating Bongard Problems*. The repository includes reproducible datasets,
+  _Thinking in Images: Analysing Concept Learning in Neural Networks by
+  Generating Bongard Problems_. The repository includes reproducible datasets,
   model configuration, training and image-generation tools, result analysis,
   and the thesis paper.
 - **BlackJack-C:** An early C implementation of Blackjack accompanied by a
