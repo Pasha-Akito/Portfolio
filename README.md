@@ -10,12 +10,13 @@ The website is currently in the specification and content-planning stage. The
 application has not yet been scaffolded.
 
 - Product requirements and acceptance criteria: [`SPEC.md`](SPEC.md)
+- Approved content questionnaire: [`questionnaire.md`](questionnaire.md)
 - Notable project changes: [`CHANGELOG.md`](CHANGELOG.md)
 - Instructions for coding agents: [`AGENTS.md`](AGENTS.md)
 
-`questionnaire.md` will be created later when Pascal explicitly begins the
-content questionnaire. `CV.pdf` is sensitive local source material and is
-intentionally excluded from Git.
+The initial content questionnaire is complete. Its approved answers may be
+refined during implementation and review. `CV.pdf` is sensitive local source
+material and is intentionally excluded from Git.
 
 ## Planned Stack
 
@@ -27,4 +28,3 @@ intentionally excluded from Git.
 Development, test, and deployment commands will be documented here when the
 application is scaffolded. Until then, `SPEC.md` is the authoritative source for
 the intended website behaviour.
-
