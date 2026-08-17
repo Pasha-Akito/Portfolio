@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">Pasha Antonov monogram</title>
+  <desc id="description">A warm white letter P and mint terminal cursor on a dark navy rounded square.</desc>
+  <rect width="512" height="512" rx="112" fill="#071426"/>
+  <path
+    d="M154 394V120h112c65 0 106 37 106 94s-41 94-106 94H154"
+    fill="none"
+    stroke="#F4F7FB"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="56"
+  />
+  <rect x="304" y="366" width="72" height="28" rx="14" fill="#50E3C2"/>
+</svg>

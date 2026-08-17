@@ -18,6 +18,9 @@ The initial content questionnaire is complete. Its approved answers may be
 refined during implementation and review. `CV.pdf` is sensitive local source
 material and is intentionally excluded from Git.
 
+The initial brand assets live in `app/` and follow the Next.js App Router's
+file-based metadata conventions.
+
 ## Stack
 
 - Next.js App Router

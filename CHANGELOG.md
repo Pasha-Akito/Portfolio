@@ -16,6 +16,7 @@ in `SPEC.md`; this file records what changed rather than what is planned.
   public content and contact links.
 - Formatting, linting, type, component, production-build, Playwright navigation,
   outbound-link, responsive-layout, and screenshot validation.
+- A personal favicon combining a `P` monogram with a terminal-cursor accent.
 
 ### Changed
 
