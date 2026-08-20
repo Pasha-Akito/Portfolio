@@ -31,3 +31,5 @@ in `SPEC.md`; this file records what changed rather than what is planned.
   the project grid, and refreshed project and contact wording.
 - Added an About Me photo gallery featuring Pasha's engagement and rabbits,
   Chase and Bella.
+- Refined proposal copy, desktop heading scale and line wrapping, and Chase's
+  gallery crop based on visual-review feedback.

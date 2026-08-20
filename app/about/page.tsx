@@ -8,7 +8,7 @@ export const metadata = { title: "About Me" };
 
 export default function AboutPage() {
   return (
-    <div className="section-wrap page-stack">
+    <div className="section-wrap page-stack about-page">
       <PageIntro
         eyebrow="About me"
         title="I’m happiest when discussing problems with others before the path is clear."
@@ -67,7 +67,7 @@ export default function AboutPage() {
             />
             <figcaption>Celebrating our engagement</figcaption>
           </figure>
-          <figure className="photo-card">
+          <figure className="photo-card photo-card-chase">
             <Image
               src={chaseRabbit}
               alt="Chase, Pasha’s white male rabbit"

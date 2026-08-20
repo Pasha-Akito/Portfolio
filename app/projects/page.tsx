@@ -6,7 +6,7 @@ export const metadata = { title: "Projects" };
 
 export default function ProjectsPage() {
   return (
-    <div className="section-wrap page-stack">
+    <div className="section-wrap page-stack projects-page">
       <PageIntro
         eyebrow="My favourite projects"
         title="Projects that challenged my skills and deepened my understanding of technology."
