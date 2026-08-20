@@ -90,6 +90,15 @@ test("proposal content and ordering are rendered", async ({ page }) => {
     "aia",
     "Blackjack in C",
   ]);
+  await expect(
+    page.getByText(/YouTube video with just under 3,000 views/),
+  ).toBeVisible();
+
+  await page.goto("/career");
+  await expect(page.getByText("4.5 years", { exact: true })).toBeVisible();
+  await expect(page.getByText("Over 4.5 years", { exact: true })).toHaveCount(
+    0,
+  );
 
   await page.goto("/about");
   for (const image of [/engagement/i, /Chase/i, /Bella/i]) {
@@ -104,6 +113,39 @@ test("proposal content and ordering are rendered", async ({ page }) => {
       )
       .toBeGreaterThan(0);
   }
+});
+
+test("desktop proposal copy intended for one line does not wrap", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/");
+  for (const label of [
+    "Under four years",
+    "99.999% release success",
+    "Master’s in AI",
+  ]) {
+    const heading = page.locator(".hero-stats dt", { hasText: label });
+    const lineHeight = await heading.evaluate((element) =>
+      Number.parseFloat(getComputedStyle(element).lineHeight),
+    );
+    const height = await heading.evaluate(
+      (element) => element.getBoundingClientRect().height,
+    );
+    expect(height).toBeLessThan(lineHeight * 1.5);
+  }
+
+  await page.goto("/projects");
+  const intro = page.getByText(
+    "These are the projects I am proud of, and each shows you a little of who I am.",
+  );
+  const introLineHeight = await intro.evaluate((element) =>
+    Number.parseFloat(getComputedStyle(element).lineHeight),
+  );
+  const introHeight = await intro.evaluate(
+    (element) => element.getBoundingClientRect().height,
+  );
+  expect(introHeight).toBeLessThan(introLineHeight * 1.5);
 });
 
 test("mobile layout remains usable without horizontal overflow", async ({

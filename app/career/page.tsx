@@ -47,7 +47,7 @@ export default function CareerPage() {
       </section>
       <section className="career-feature muted-feature">
         <div>
-          <p className="eyebrow career-kicker">Over 4.5 years</p>
+          <p className="eyebrow career-kicker">4.5 years</p>
           <h2>Lead Engineer (Staff equivalent)</h2>
           <p className="company company-prominent">Mastercard</p>
         </div>

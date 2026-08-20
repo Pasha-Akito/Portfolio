@@ -39,7 +39,7 @@ export const projects: Project[] = [
     name: "Blackjack in C",
     eyebrow: "Where it started",
     description:
-      "A tough first-year assignment that pushed the limits of my knowledge, accompanied by a detailed YouTube video with more than 3,000 views.",
+      "A tough first-year assignment that pushed the limits of my knowledge, accompanied by a detailed YouTube video with just under 3,000 views.",
     href: "https://github.com/Pasha-Akito/BlackJack-C",
     tags: ["C", "Game Logic", "YouTube"],
     visual: "blackjack",
