@@ -8,7 +8,8 @@ export default function Home() {
       <section className="hero section-wrap">
         <div className="hero-copy">
           <p className="eyebrow">
-            <span className="status-dot" /> Forward Deployed AI Engineer at BCG
+            <span className="status-dot" /> Forward Deployed AI Engineer at
+            Boston Consultancy Group
             <span className="previous-role">
               Previously Lead Engineer (Staff equivalent) at Mastercard
             </span>
