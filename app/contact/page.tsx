@@ -6,7 +6,7 @@ const contacts = [
   ["Email", "1masterpasha@gmail.com", "mailto:1masterpasha@gmail.com"],
   [
     "LinkedIn",
-    "pavelantonovsoftwaredeveloper",
+    "Pasha Antonov",
     "https://www.linkedin.com/in/pavelantonovsoftwaredeveloper/",
   ],
   ["GitHub", "Pasha-Akito", "https://github.com/Pasha-Akito"],
@@ -15,10 +15,13 @@ const contacts = [
 export default function ContactPage() {
   return (
     <div className="section-wrap page-stack contact-page">
-      <PageIntro eyebrow="Contact" title="Have a hard problem? Let’s talk.">
+      <PageIntro
+        eyebrow="Contact"
+        title="Have an interesting problem, or just want to chat about technology? Let’s talk."
+      >
         <p>
           I’m always interested in ambitious engineering, applied AI, and the
-          conversations that begin with “this might be difficult.”
+          conversations that really get to the root of technology and processes.
         </p>
       </PageIntro>
       <div className="contact-list">

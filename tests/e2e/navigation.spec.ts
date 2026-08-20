@@ -1,11 +1,11 @@
 import { expect, test } from "@playwright/test";
 
 const routes = [
-  ["/", "I turn complex systems"],
-  ["/projects", "Projects built from curiosity"],
-  ["/career", "Progress measured in ownership"],
-  ["/about", "I’m happiest when"],
-  ["/contact", "Have a hard problem?"],
+  ["/", "I turn ambiguous problems"],
+  ["/projects", "Projects that challenged my skills"],
+  ["/career", "Experience measured in scope"],
+  ["/about", "I’m happiest when discussing problems"],
+  ["/contact", "Have an interesting problem"],
 ] as const;
 
 for (const [path, heading] of routes) {
@@ -69,6 +69,41 @@ test("project and contact links point to approved destinations", async ({
   await expect(
     page.getByRole("link", { name: /Pasha-Akito/i }),
   ).toHaveAttribute("href", "https://github.com/Pasha-Akito");
+  await expect(
+    page.getByRole("link", { name: /LinkedIn Pasha Antonov/i }),
+  ).toHaveAttribute(
+    "href",
+    "https://www.linkedin.com/in/pavelantonovsoftwaredeveloper/",
+  );
+});
+
+test("proposal content and ordering are rendered", async ({ page }) => {
+  await page.goto("/projects");
+  const projectNames = await page
+    .locator(".project-card h2")
+    .evaluateAll((headings) =>
+      headings.map((heading) => heading.firstChild?.textContent),
+    );
+  expect(projectNames).toEqual([
+    "Arla",
+    "Bongard Problem Generator",
+    "aia",
+    "Blackjack in C",
+  ]);
+
+  await page.goto("/about");
+  for (const image of [/engagement/i, /Chase/i, /Bella/i]) {
+    const galleryImage = page.getByAltText(image);
+    await galleryImage.scrollIntoViewIfNeeded();
+    await expect(galleryImage).toBeVisible();
+    await expect
+      .poll(() =>
+        galleryImage.evaluate(
+          (element) => (element as HTMLImageElement).naturalWidth,
+        ),
+      )
+      .toBeGreaterThan(0);
+  }
 });
 
 test("mobile layout remains usable without horizontal overflow", async ({

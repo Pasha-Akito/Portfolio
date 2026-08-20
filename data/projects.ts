@@ -27,15 +27,6 @@ export const projects: Project[] = [
     visual: "bongard",
   },
   {
-    name: "Blackjack in C",
-    eyebrow: "Where it started",
-    description:
-      "A first-year Blackjack implementation that became an enduring YouTube introduction to the project.",
-    href: "https://github.com/Pasha-Akito/BlackJack-C",
-    tags: ["C", "Game Logic", "YouTube"],
-    visual: "blackjack",
-  },
-  {
     name: "aia",
     eyebrow: "Harness engineering",
     description:
@@ -43,5 +34,14 @@ export const projects: Project[] = [
     href: "https://github.com/Pasha-Akito/aia",
     tags: ["Python", "Ollama", "AI Tooling"],
     visual: "aia",
+  },
+  {
+    name: "Blackjack in C",
+    eyebrow: "Where it started",
+    description:
+      "A tough first-year assignment that pushed the limits of my knowledge, accompanied by a detailed YouTube video with more than 3,000 views.",
+    href: "https://github.com/Pasha-Akito/BlackJack-C",
+    tags: ["C", "Game Logic", "YouTube"],
+    visual: "blackjack",
   },
 ];

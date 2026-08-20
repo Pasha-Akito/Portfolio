@@ -35,6 +35,25 @@
   or commands change, `CHANGELOG.md` when user-visible behaviour changes, and
   `SPEC.md` only when Pascal approves a product requirement change.
 
+## Proposal Iterations
+
+- Treat `PROPOSALS.md` as Pascal's active review feedback for the next website
+  iteration. Read the entire file before planning or implementing its items.
+- Implement the active proposal as one iteration, asking Pascal only when an
+  item requires unclear product intent, a meaningful tradeoff, missing factual
+  content, or authority not already granted by the repository instructions.
+- An iteration is complete only after every proposal item is resolved, relevant
+  documentation is aligned, all required validation passes, and the branch is
+  committed, pushed, and represented by an opened or updated pull request with
+  the required preview and visual evidence.
+- After the iteration is complete, archive `PROPOSALS.md` as the next unused
+  sequential version: `PROPOSALS_V1.md`, `PROPOSALS_V2.md`, and so on. Never
+  overwrite or renumber an existing archive.
+- If any proposal item, required validation, preview, visual evidence, or pull
+  request delivery remains unresolved, leave `PROPOSALS.md` unrenamed.
+- Keep archived proposal files in Git as the durable history of Pascal's review
+  feedback.
+
 ## Implementation Principles
 
 - Prefer the simplest implementation that satisfies `SPEC.md` and preserves a
