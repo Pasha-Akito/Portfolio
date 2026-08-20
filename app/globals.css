@@ -142,6 +142,19 @@ main {
   letter-spacing: -0.055em;
   margin: 22px 0;
 }
+.hero h1 {
+  font-size: clamp(3rem, 6.2vw, 6rem);
+}
+.hero > .hero-copy > .eyebrow {
+  font-size: clamp(0.88rem, 1.4vw, 1.05rem);
+}
+.previous-role {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.72em;
+  letter-spacing: 0.1em;
+}
 .hero h1 em,
 .manifesto-copy em {
   font-style: normal;
@@ -166,7 +179,7 @@ main {
   padding: 13px 19px;
   border: 1px solid var(--line);
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .button-primary {
   background: var(--cyan);
@@ -177,12 +190,13 @@ main {
   border-color: var(--cyan);
 }
 .hero-stats {
-  display: flex;
-  gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
   margin: 52px 0 0;
 }
 .hero-stats div {
-  padding-right: 30px;
+  padding-right: 24px;
   border-right: 1px solid var(--line);
 }
 .hero-stats div:last-child {
@@ -192,6 +206,9 @@ main {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.08rem;
+}
+.hero-stats dt strong {
+  color: var(--cyan);
 }
 .hero-stats dd {
   margin: 2px 0 0;
@@ -284,6 +301,11 @@ main {
 }
 .page-intro .lede {
   max-width: 740px;
+}
+.page-stack > .page-intro > .eyebrow,
+.impact-kicker,
+.about-kicker {
+  font-size: 0.86rem;
 }
 .project-grid {
   display: grid;
@@ -388,6 +410,9 @@ main {
 .project-copy {
   padding: 28px;
 }
+.project-copy .eyebrow {
+  font-size: 0.84rem;
+}
 .project-copy h2 {
   font-family: var(--font-display);
   font-size: 1.8rem;
@@ -431,6 +456,13 @@ main {
 .company {
   color: var(--cyan);
 }
+.career-kicker {
+  font-size: 0.88rem;
+}
+.company-prominent {
+  margin: 14px 0 0;
+  font: 700 clamp(1.5rem, 3vw, 2.4rem)/1 var(--font-display);
+}
 .muted-feature {
   background: transparent;
   margin-bottom: 100px;
@@ -438,6 +470,12 @@ main {
 .section-heading h2 {
   font: 700 clamp(2rem, 4vw, 3.8rem)/1.05 var(--font-display);
   margin: 0 0 36px;
+}
+.section-summary {
+  max-width: 650px;
+  margin: -20px 0 36px;
+  color: var(--muted);
+  font-size: 1.05rem;
 }
 .impact-grid {
   display: grid;
@@ -491,6 +529,10 @@ main {
   max-width: 680px;
   color: #c4d3df;
 }
+.reliability-callout h2 {
+  margin: 0 0 8px;
+  font: 700 clamp(1.4rem, 2.5vw, 2rem)/1.15 var(--font-display);
+}
 .about-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -537,6 +579,43 @@ main {
     radial-gradient(circle at 50% 0, rgba(87, 230, 208, 0.12), transparent 58%),
     var(--navy-2);
 }
+.personal-gallery {
+  margin-top: 100px;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  grid-template-rows: repeat(2, minmax(260px, 1fr));
+  gap: 22px;
+}
+.photo-card {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--navy-2);
+}
+.photo-card-wide {
+  grid-row: 1 / span 2;
+}
+.photo-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.85) contrast(1.03);
+}
+.photo-card figcaption {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  padding: 7px 11px;
+  border-left: 2px solid var(--cyan);
+  background: rgba(5, 13, 29, 0.88);
+  font-size: 0.78rem;
+}
 .steam {
   margin-bottom: auto;
   color: var(--cyan);
@@ -570,7 +649,7 @@ main {
   color: var(--cyan);
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  font-size: 0.7rem;
+  font-size: 0.84rem;
 }
 .contact-list strong {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
@@ -660,8 +739,15 @@ main {
   }
   .project-grid,
   .impact-grid,
-  .about-grid {
+  .about-grid,
+  .photo-grid {
     grid-template-columns: 1fr;
+  }
+  .photo-grid {
+    grid-template-rows: 420px 340px 420px;
+  }
+  .photo-card-wide {
+    grid-row: auto;
   }
   .career-feature {
     grid-template-columns: 1fr;
@@ -696,7 +782,7 @@ main {
   }
   .hero-stats {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .hero-stats div {
     border: 0;

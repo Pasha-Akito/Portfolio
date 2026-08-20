@@ -24,3 +24,10 @@ in `SPEC.md`; this file records what changed rather than what is planned.
 - Expanded the initial portfolio concept into a testable website specification,
   including content boundaries, routes, visual direction, technology, testing,
   pull-request review, hosting, deployment, and acceptance criteria.
+- Refined site-wide copy to emphasise collaborative problem-solving, clarified
+  that the Mastercard Lead Engineer role is Staff-equivalent, and expanded the
+  approved career-impact narrative.
+- Increased the requested labels and controls, reordered Blackjack to fourth in
+  the project grid, and refreshed project and contact wording.
+- Added an About Me photo gallery featuring Pasha's engagement and rabbits,
+  Chase and Bella.

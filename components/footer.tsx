@@ -2,7 +2,8 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <p>
-        Built with intent, curiosity, and a bias toward solving hard problems.
+        Always excited to learn more about how we have worked, the future of
+        technology, and ways to challenge the status quo.
       </p>
       <p>© {new Date().getFullYear()} Pasha Antonov</p>
     </footer>

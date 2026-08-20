@@ -8,12 +8,12 @@ export default function ProjectsPage() {
   return (
     <div className="section-wrap page-stack">
       <PageIntro
-        eyebrow="Selected work"
-        title="Projects built from curiosity—and finished with intent."
+        eyebrow="My favourite projects"
+        title="Projects that challenged my skills and deepened my understanding of technology."
       >
         <p>
-          From a full social network to AI research and local tooling, these are
-          the projects that best chart how I build.
+          These are the projects I am proud of, and each shows you a little of
+          who I am.
         </p>
       </PageIntro>
       <div className="project-grid">
