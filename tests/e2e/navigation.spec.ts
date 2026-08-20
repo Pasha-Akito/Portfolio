@@ -90,7 +90,9 @@ test("proposal content and ordering are rendered", async ({ page }) => {
     "aia",
     "Blackjack in C",
   ]);
-  await expect(page.getByText(/YouTube video with 2,827 views/)).toBeVisible();
+  await expect(
+    page.getByText(/YouTube video with just under 3,000 views/),
+  ).toBeVisible();
 
   await page.goto("/career");
   await expect(page.getByText("4.5 years", { exact: true })).toBeVisible();
