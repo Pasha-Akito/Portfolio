@@ -37,7 +37,7 @@ export default function CareerPage() {
         <div>
           <p className="eyebrow career-kicker">Now</p>
           <h2>Forward Deployed AI Engineer</h2>
-          <p className="company company-prominent">BCG</p>
+          <p className="company company-prominent">Boston Consultancy Group</p>
         </div>
         <p>
           Combining deep knowledge of large distributed systems, focused and

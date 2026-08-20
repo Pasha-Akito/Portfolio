@@ -33,3 +33,4 @@ in `SPEC.md`; this file records what changed rather than what is planned.
   Chase and Bella.
 - Refined proposal copy, desktop heading scale and line wrapping, and Chase's
   gallery crop based on visual-review feedback.
+- Expanded the BCG company label on the Welcome and Career pages.
