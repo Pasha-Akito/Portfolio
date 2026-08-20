@@ -9,7 +9,7 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">
             <span className="status-dot" /> Forward Deployed AI Engineer at
-            Boston Consultancy Group
+            Boston Consultancy Group in Dubai
             <span className="previous-role">
               Previously Lead Engineer (Staff equivalent) at Mastercard
             </span>

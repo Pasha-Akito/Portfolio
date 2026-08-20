@@ -34,3 +34,5 @@ in `SPEC.md`; this file records what changed rather than what is planned.
 - Refined proposal copy, desktop heading scale and line wrapping, and Chase's
   gallery crop based on visual-review feedback.
 - Expanded the BCG company label on the Welcome and Career pages.
+- Added Dubai and Dublin location context to the BCG and Mastercard role
+  labels.

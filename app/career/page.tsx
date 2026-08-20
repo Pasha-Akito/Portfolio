@@ -37,7 +37,9 @@ export default function CareerPage() {
         <div>
           <p className="eyebrow career-kicker">Now</p>
           <h2>Forward Deployed AI Engineer</h2>
-          <p className="company company-prominent">Boston Consultancy Group</p>
+          <p className="company company-prominent">
+            Boston Consultancy Group - Dubai
+          </p>
         </div>
         <p>
           Combining deep knowledge of large distributed systems, focused and
@@ -49,7 +51,7 @@ export default function CareerPage() {
         <div>
           <p className="eyebrow career-kicker">4.5 years</p>
           <h2>Lead Engineer (Staff equivalent)</h2>
-          <p className="company company-prominent">Mastercard</p>
+          <p className="company company-prominent">Mastercard - Dublin</p>
         </div>
         <p>
           Starting as a Graduate, I earned three promotions and progressed to

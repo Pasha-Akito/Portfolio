@@ -80,7 +80,7 @@ test("project and contact links point to approved destinations", async ({
 test("proposal content and ordering are rendered", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".hero-copy .eyebrow")).toContainText(
-    "Forward Deployed AI Engineer at Boston Consultancy Group",
+    "Forward Deployed AI Engineer at Boston Consultancy Group in Dubai",
   );
 
   await page.goto("/projects");
@@ -101,7 +101,10 @@ test("proposal content and ordering are rendered", async ({ page }) => {
 
   await page.goto("/career");
   await expect(
-    page.getByText("Boston Consultancy Group", { exact: true }),
+    page.getByText("Boston Consultancy Group - Dubai", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByText("Mastercard - Dublin", { exact: true }),
   ).toBeVisible();
   await expect(page.getByText("4.5 years", { exact: true })).toBeVisible();
   await expect(page.getByText("Over 4.5 years", { exact: true })).toHaveCount(
