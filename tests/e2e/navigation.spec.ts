@@ -80,7 +80,16 @@ test("project and contact links point to approved destinations", async ({
 test("proposal content and ordering are rendered", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".hero-copy .eyebrow")).toContainText(
-    "Forward Deployed AI Engineer at Boston Consultancy Group in Dubai",
+    "Forward Deployed AI Engineer at BCG X in Dubai",
+  );
+  await expect(page.locator(".previous-role")).toHaveText(
+    "Previously Lead Software Engineer at Mastercard",
+  );
+  await expect(page.locator(".hero-lede")).toContainText(
+    "a former Lead Software Engineer at Mastercard",
+  );
+  await expect(page.locator(".hero-stats dd").first()).toHaveText(
+    "Graduate to Lead Software Engineer",
   );
 
   await page.goto("/projects");
@@ -100,8 +109,12 @@ test("proposal content and ordering are rendered", async ({ page }) => {
   ).toBeVisible();
 
   await page.goto("/career");
+  await expect(page.getByText("BCG X - Dubai", { exact: true })).toBeVisible();
+  await expect(page.locator(".page-intro")).toContainText(
+    "I progressed to a Lead Software Engineer role",
+  );
   await expect(
-    page.getByText("Boston Consultancy Group - Dubai", { exact: true }),
+    page.getByRole("heading", { level: 2, name: "Lead Engineer", exact: true }),
   ).toBeVisible();
   await expect(
     page.getByText("Mastercard - Dublin", { exact: true }),

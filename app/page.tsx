@@ -8,18 +8,18 @@ export default function Home() {
       <section className="hero section-wrap">
         <div className="hero-copy">
           <p className="eyebrow">
-            <span className="status-dot" /> Forward Deployed AI Engineer at
-            Boston Consultancy Group in Dubai
+            <span className="status-dot" /> Forward Deployed AI Engineer at BCG
+            X in Dubai
             <span className="previous-role">
-              Previously Lead Engineer (Staff equivalent) at Mastercard
+              Previously Lead Software Engineer at Mastercard
             </span>
           </p>
           <h1>
             I turn ambiguous problems into <em>clear outcomes.</em>
           </h1>
           <p className="hero-lede">
-            I’m Pasha Antonov, a former Lead Engineer at Mastercard, an AI
-            engineer, and a hands-on builder who thrives in uncertainty and
+            I’m Pasha Antonov, a former Lead Software Engineer at Mastercard, an
+            AI engineer, and a hands-on builder who thrives in uncertainty and
             helps people find a clear way forward.
           </p>
           <div className="button-row">
@@ -35,7 +35,7 @@ export default function Home() {
               <dt>
                 Under <strong>four years</strong>
               </dt>
-              <dd>Graduate to Lead Software Engineer (Staff equivalent)</dd>
+              <dd>Graduate to Lead Software Engineer</dd>
             </div>
             <div>
               <dt>99.999% release success</dt>
