@@ -28,18 +28,16 @@ export default function CareerPage() {
         title="Experience measured in scope, not just time."
       >
         <p>
-          From Graduate, I progressed to a Lead Engineer (Staff equivalent) role
-          in under four years, leading complex systems, broad initiatives, and
-          challenges to the status quo.
+          From Graduate, I progressed to a Lead Software Engineer role in under
+          four years, leading complex systems, broad initiatives, and challenges
+          to the status quo.
         </p>
       </PageIntro>
       <section className="career-feature">
         <div>
           <p className="eyebrow career-kicker">Now</p>
           <h2>Forward Deployed AI Engineer</h2>
-          <p className="company company-prominent">
-            Boston Consultancy Group - Dubai
-          </p>
+          <p className="company company-prominent">BCG X - Dubai</p>
         </div>
         <p>
           Combining deep knowledge of large distributed systems, focused and
@@ -50,7 +48,7 @@ export default function CareerPage() {
       <section className="career-feature muted-feature">
         <div>
           <p className="eyebrow career-kicker">4.5 years</p>
-          <h2>Lead Engineer (Staff equivalent)</h2>
+          <h2>Lead Engineer</h2>
           <p className="company company-prominent">Mastercard - Dublin</p>
         </div>
         <p>

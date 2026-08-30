@@ -36,3 +36,5 @@ in `SPEC.md`; this file records what changed rather than what is planned.
 - Expanded the BCG company label on the Welcome and Career pages.
 - Added Dubai and Dublin location context to the BCG and Mastercard role
   labels.
+- Updated Welcome and Career role labels to use BCG X and Lead Software
+  Engineer wording, removing the Staff-equivalent qualifier.
