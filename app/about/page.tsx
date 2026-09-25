@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { PageIntro } from "@/components/page-intro";
-import bellaRabbit from "@/Bella_rabbit.png";
-import chaseRabbit from "@/Chase_rabbit.jpeg";
-import engagement from "@/Engagement.jpeg";
+import bellaRabbit from "@/photos/Bella_rabbit.png";
+import chaseRabbit from "@/photos/Chase_rabbit.jpeg";
+import engagement from "@/photos/Engagement.jpeg";
 
 export const metadata = { title: "About Me" };
 
