@@ -622,7 +622,7 @@ main {
   filter: saturate(0.85) contrast(1.03);
 }
 .photo-card-chase img {
-  object-position: 65% center;
+  object-fit: cover;
 }
 .photo-card figcaption {
   position: absolute;
