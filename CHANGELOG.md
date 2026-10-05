@@ -7,6 +7,7 @@ in `SPEC.md`; this file records what changed rather than what is planned.
 
 ### Added
 
+- Quartertrace, Pascal's first SaaS product, as a featured website-linked project.
 - Initial repository guidance for contributors and coding agents.
 - Project overview and documentation map.
 - A structured questionnaire for approving public portfolio content.

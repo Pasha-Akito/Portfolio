@@ -9,7 +9,7 @@ export function ProjectCard({
 }) {
   return (
     <a
-      className="project-card"
+      className={`project-card${project.featured ? " project-card-featured" : ""}`}
       href={project.href}
       target="_blank"
       rel="noreferrer"
@@ -19,6 +19,15 @@ export function ProjectCard({
         aria-hidden="true"
       >
         <span className="project-number">0{index + 1}</span>
+        {project.visual === "quartertrace" && (
+          <code className="quartertrace-mark">
+            <span>SEC DATA FOR AI AGENTS</span>
+            <b>POST /api/financials/&#123;ticker&#125;</b>
+            <small>
+              &#123; &quot;year&quot;: 2025, &quot;quarter&quot;: 1 &#125;
+            </small>
+          </code>
+        )}
         {project.visual === "aia" && <code>$ aia how do I solve this?</code>}
         {project.visual === "blackjack" && (
           <span className="playing-cards">A♠ J♦</span>

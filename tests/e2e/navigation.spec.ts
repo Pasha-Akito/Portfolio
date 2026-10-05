@@ -52,6 +52,9 @@ test("project and contact links point to approved destinations", async ({
   page,
 }) => {
   await page.goto("/projects");
+  await expect(
+    page.getByRole("link", { name: /Quartertrace/i }),
+  ).toHaveAttribute("href", "https://www.quartertrace.com");
   await expect(page.getByRole("link", { name: /Arla/i })).toHaveAttribute(
     "href",
     "https://github.com/Pasha-Akito/Arla-Frontend",
@@ -99,6 +102,7 @@ test("proposal content and ordering are rendered", async ({ page }) => {
       headings.map((heading) => heading.firstChild?.textContent),
     );
   expect(projectNames).toEqual([
+    "Quartertrace",
     "Arla",
     "Bongard Problem Generator",
     "aia",
