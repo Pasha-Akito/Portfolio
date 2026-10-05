@@ -4,10 +4,21 @@ export type Project = {
   description: string;
   href: string;
   tags: string[];
-  visual: "arla" | "bongard" | "blackjack" | "aia";
+  visual: "quartertrace" | "arla" | "bongard" | "blackjack" | "aia";
+  featured?: boolean;
 };
 
 export const projects: Project[] = [
+  {
+    name: "Quartertrace",
+    eyebrow: "First SaaS product · Private repository",
+    description:
+      "An API for AI agents to query source-linked, SEC-derived quarterly financials by ticker and calendar quarter, with OpenAPI 3.1 and x402 payments on Base.",
+    href: "https://www.quartertrace.com",
+    tags: ["Agentic SaaS", "OpenAPI 3.1", "x402 · Base"],
+    visual: "quartertrace",
+    featured: true,
+  },
   {
     name: "Arla",
     eyebrow: "Full-stack alumni network",
