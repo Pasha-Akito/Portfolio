@@ -18,6 +18,16 @@ const achievements = [
     "5 seconds",
     "Transformed the performance of very large legacy SQL queries.",
   ],
+  [
+    "3m 44.9s",
+    "194 ms",
+    "Internal team's case-ID filter search (p90). p95: 4m 38.1s to 200 ms; p99: 5m 33.7s to 247 ms. Used 1,610 times in one week; prefix/postfix comparison estimated 40 hours saved per week on average.",
+  ],
+  [
+    "2m 10s",
+    "299 ms",
+    "Internal team's work queue (p90). p95: 2m 29s to 356 ms; p99: 2m 38s to 13 seconds. Used 300 times in one week; prefix/postfix comparison estimated 5 hours saved per week on average.",
+  ],
 ] as const;
 
 export default function CareerPage() {

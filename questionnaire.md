@@ -49,6 +49,13 @@ Include measurable results where they are public and safe to share.
   milliseconds.
 - Reduced very large legacy SQL query runtimes from three minutes to five
   seconds.
+- Improved an internal team's case-ID filter search from 3m 44.9s to 194 ms at
+  p90 (p95: 4m 38.1s to 200 ms; p99: 5m 33.7s to 247 ms). It was used 1,610
+  times in one week; a prefix/postfix comparison estimated 40 hours saved per
+  week.
+- Improved an internal team's work queue from 2m 10s to 299 ms at p90 (p95:
+  2m 29s to 356 ms; p99: 2m 38s to 13 seconds). It was used 300 times in one
+  week; a prefix/postfix comparison estimated 5 hours saved per week.
 - Reached a Tech Lead role within four years of beginning his career.
 
 ### Are there career details from your CV that should not appear publicly?
