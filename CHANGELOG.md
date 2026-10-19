@@ -7,6 +7,8 @@ in `SPEC.md`; this file records what changed rather than what is planned.
 
 ### Added
 
+- Mastercard internal search and queue p99 latency and average weekly time
+  savings.
 - Quartertrace, Pascal's first SaaS product, as a featured website-linked project.
 - Initial repository guidance for contributors and coding agents.
 - Project overview and documentation map.

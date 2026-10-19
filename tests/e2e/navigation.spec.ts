@@ -124,6 +124,14 @@ test("proposal content and ordering are rendered", async ({ page }) => {
     page.getByText("Mastercard - Dublin", { exact: true }),
   ).toBeVisible();
   await expect(page.getByText("4.5 years", { exact: true })).toBeVisible();
+  await expect(page.getByText("247 ms", { exact: true })).toBeVisible();
+  await expect(page.getByText("13 seconds", { exact: true })).toBeVisible();
+  await expect(
+    page.getByText(/saved 40 hours per week on average/),
+  ).toBeVisible();
+  await expect(
+    page.getByText(/saved 5 hours per week on average/),
+  ).toBeVisible();
   await expect(page.getByText("Over 4.5 years", { exact: true })).toHaveCount(
     0,
   );

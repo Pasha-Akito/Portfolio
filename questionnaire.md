@@ -49,6 +49,10 @@ Include measurable results where they are public and safe to share.
   milliseconds.
 - Reduced very large legacy SQL query runtimes from three minutes to five
   seconds.
+- Improved an internal team's case-ID filter search from 5m 33.7s to 247 ms at
+  p99; post-fix it saved an average of 40 hours per week.
+- Improved an internal team's work queue from 2m 38s to 13 seconds at p99;
+  post-fix it saved an average of 5 hours per week.
 - Reached a Tech Lead role within four years of beginning his career.
 
 ### Are there career details from your CV that should not appear publicly?

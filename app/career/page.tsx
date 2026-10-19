@@ -18,6 +18,16 @@ const achievements = [
     "5 seconds",
     "Transformed the performance of very large legacy SQL queries.",
   ],
+  [
+    "5m 33.7s",
+    "247 ms",
+    "Internal team's case-ID filter search (p99). Post-fix, it saved 40 hours per week on average.",
+  ],
+  [
+    "2m 38s",
+    "13 seconds",
+    "Internal team's work queue (p99). Post-fix, it saved 5 hours per week on average.",
+  ],
 ] as const;
 
 export default function CareerPage() {
