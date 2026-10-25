@@ -67,8 +67,8 @@ test("project and contact links point to approved destinations", async ({
   );
   await page.goto("/contact");
   await expect(
-    page.getByRole("link", { name: /1masterpasha@gmail.com/i }),
-  ).toHaveAttribute("href", "mailto:1masterpasha@gmail.com");
+    page.getByRole("link", { name: /pavelantonovdev@gmail.com/i }),
+  ).toHaveAttribute("href", "mailto:pavelantonovdev@gmail.com");
   await expect(
     page.getByRole("link", { name: /Pasha-Akito/i }),
   ).toHaveAttribute("href", "https://github.com/Pasha-Akito");
