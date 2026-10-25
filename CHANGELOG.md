@@ -24,6 +24,7 @@ in `SPEC.md`; this file records what changed rather than what is planned.
 
 ### Changed
 
+- Updated the Contact page email address.
 - Expanded the initial portfolio concept into a testable website specification,
   including content boundaries, routes, visual direction, technology, testing,
   pull-request review, hosting, deployment, and acceptance criteria.

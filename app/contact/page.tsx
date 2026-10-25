@@ -3,7 +3,7 @@ import { PageIntro } from "@/components/page-intro";
 export const metadata = { title: "Contact" };
 
 const contacts = [
-  ["Email", "1masterpasha@gmail.com", "mailto:1masterpasha@gmail.com"],
+  ["Email", "pavelantonovdev@gmail.com", "mailto:pavelantonovdev@gmail.com"],
   [
     "LinkedIn",
     "Pasha Antonov",
